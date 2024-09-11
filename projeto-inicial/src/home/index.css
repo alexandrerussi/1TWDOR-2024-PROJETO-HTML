@@ -1,0 +1,45 @@
+.texto-estilizado {
+    color: blue;
+
+    /* ESTILIZAÇÃO DE TEXTO */
+    font-family: Arial;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+
+    /* BOX MODEL */
+    width: 300px;
+    /* margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 5px; */
+    /* margin: 50px 10px 30px 5px; */
+    margin: 0 auto;
+
+    border: 5px solid red;
+    padding: 15px;
+
+}
+
+.container {
+    background-color: aquamarine;
+    /* height: 200px; */
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container div {
+    background-color: #25795d; /* HEXADECIMAL DA COR */
+    color: white;
+    width: 120px;
+    height: fit-content;
+    font-size: 20px;
+    margin: 5px;
+}
