@@ -16,7 +16,7 @@
     <div class="header">
         <div class="container">
             <div class="nav">
-                <img src="" alt="">
+                <img src="/public/assets/images/logo.png" alt="Logomarca do site">
                 <ul>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Enterprise</a></li>
@@ -46,11 +46,52 @@
                         In instants, no credit card required
                     </p>
                 </div>
-                <div class="dashboard"></div>
+                <div class="dashboard">
+                    <div class="group-blocks">
+                        <div class="bloco bloco-maior">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="bloco bloco-menor"></div>
+                    </div>
+                    <div class="group-blocks">
+                        <div class="bloco bloco-menor"></div>
+                        <div class="bloco bloco-maior"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
 </body>
 
 </html>
